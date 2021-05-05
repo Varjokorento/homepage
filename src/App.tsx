@@ -8,7 +8,10 @@ import {
 import './App.css';
 import About from './components/About';
 import Gallery from './components/Gallery';
+import Home from './components/Home';
+import PhoneGuesser from './components/PhoneGuesser';
 import { Portfolio } from './components/Portfolio';
+import Stuff from './components/Stuff';
 
 function App() {
   return (
@@ -25,9 +28,16 @@ function App() {
             <li>
               <Link to="/gallery">Gallery</Link>
             </li>
+            <li>
+              <Link to="/stuff">Stuff</Link>
+            </li>
           </ul>
         </nav>
+ 
         <Switch>
+          <Route exact path= "/">
+            <Home/>
+          </Route>
           <Route path="/about">
             <About />
           </Route>
@@ -36,6 +46,12 @@ function App() {
           </Route>
           <Route path ="/gallery">
             <Gallery/>
+          </Route>
+          <Route path="/stuff">
+            <Stuff/>
+          </Route>
+          <Route path="/phoneNumber">
+            <PhoneGuesser/>
           </Route>
         </Switch>
       </div>

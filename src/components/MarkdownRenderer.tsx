@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import AboutMD from '../markdown/About.md'
+import PortfolioMd from '../markdown/Portfolio.md'
 import DefaultMD from '../markdown/DefaultMd.md'
 import Markdown from 'markdown-to-jsx';
 
@@ -20,6 +21,12 @@ export function MarkdownRenderer(props:mdProps) {
 const renderMD = (mdName: string) => {
     if (mdName === 'About') {
         fetch(AboutMD)
+        .then((response) => response.text())
+        .then((text) => {
+            setPostMarkdown(text);
+        });
+    } else if (mdName === 'Portfolio') {
+        fetch(PortfolioMd)
         .then((response) => response.text())
         .then((text) => {
             setPostMarkdown(text);

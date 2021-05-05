@@ -1,3 +1,7 @@
+import React from "react";
+import { MarkdownRenderer } from "./MarkdownRenderer";
+
 export function Portfolio() {
-    return (<p>Portfolio!</p>)
+    return(<MarkdownRenderer mdName={'Portfolio'}/>)
+
 }
