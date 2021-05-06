@@ -25,9 +25,9 @@ function App() {
             <li>
               <Link to="/portfolio">Portfolio</Link>
             </li>
-            <li>
+           {/* <li>
               <Link to="/gallery">Gallery</Link>
-            </li>
+           </li>*/}
             <li>
               <Link to="/stuff">Stuff</Link>
             </li>

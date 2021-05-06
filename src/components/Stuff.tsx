@@ -4,8 +4,9 @@ import {
 
 export default function Stuff() {
     return (
-        <div>
-            <h1  className='linkTitle'><Link to="/phoneNumber"> Phone Guesser </Link></h1>
+        <div className="linkBlock">
+            <h1 className='linkTitle'><Link style={{ textDecoration: 'none' }} to="/phoneNumber"> Phone Guesser </Link></h1>
+            {/*<h1 className='linkTitle'><Link style={{ textDecoration: 'none' }} to="/casino"> Casino </Link></h1>*/}
         </div>
     )
 }
