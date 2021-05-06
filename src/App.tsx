@@ -9,9 +9,10 @@ import './App.css';
 import About from './components/About';
 import Gallery from './components/Gallery';
 import Home from './components/Home';
-import PhoneGuesser from './components/PhoneGuesser';
+import PhoneGuesser from './components/gadgets/PhoneGuesser';
 import { Portfolio } from './components/Portfolio';
 import Stuff from './components/Stuff';
+import Casino from './components/gadgets/Casino';
 
 function App() {
   return (
@@ -52,6 +53,9 @@ function App() {
           </Route>
           <Route path="/phoneNumber">
             <PhoneGuesser/>
+          </Route>
+          <Route path="/casino">
+            <Casino/>
           </Route>
         </Switch>
       </div>
