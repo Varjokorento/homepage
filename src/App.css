@@ -39,6 +39,10 @@ li a:hover {
   font-size: 48px
 }
 
+.smallTitle {
+  font-size: 36px
+}
+
 .titleText {
   margin-left: 25%;
   margin-right: 25%;
@@ -54,4 +58,25 @@ li a:hover {
 
 .linkTitle:hover {
   color: grey
+}
+
+.center {
+  margin-left: 25%;
+  margin-top: 15%;
+  margin-right: 25%;
+}
+
+.boldText {
+  font-weight: bold;
+}
+
+
+.tryAgain {
+  border-bottom: 3px solid;
+  width:fit-content
+}
+
+.tryAgain:hover {
+  cursor: pointer;
+  color: gray
 }
