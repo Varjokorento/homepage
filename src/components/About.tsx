@@ -1,4 +1,4 @@
-import { MarkdownRenderer } from "./MarkdownRenderer";
+import { MarkdownRenderer } from "./markdownutils/MarkdownRenderer";
 import React from "react";
 
 export default function About() {
